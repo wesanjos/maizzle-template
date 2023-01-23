@@ -1,0 +1,101 @@
+---
+title: "The Website Weekly Newsletter"
+preheader: "👀 Lorem, ipsum, and much dolor in this week's edition"
+image: img/index_02.jpg
+bodyClass: bg-slate-50
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-165 sm:w-full">
+            <tr>
+              <td class="p-0 text-center">
+                <img
+                  src="img/index_01.jpg"
+                  width="650"
+                  alt="Civic Híbrido"
+                  class="max-w-full align-middle [border:0]"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-[#f2f2f2]">
+                <h1
+                  class="w-4/5 mx-auto m-0 text-black text-center text-[31px] leading-[33px]"
+                >
+                  Uma nova energia acompanhada<br />
+                  de muita segurança.
+                </h1>
+
+                <div class="leading-[40pt] sm:h-8" role="separator">
+                  &zwnj;
+                </div>
+
+                <p
+                  class="w-4/5 mx-auto m-0 text-black text-center text-[19px] leading-[25px]"
+                >
+                  <strong>O novo Honda Civic Híbrido</strong> já vem acompanhado da segurança do
+                  <strong>Honda Sensing</strong>, uma tecnologia exclusiva para maior segurança e
+                  assistência ao condutor.
+                </p>
+
+                <div class="leading-[50pt]" role="separator">
+                  &zwnj;
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="bg-top bg-no-repeat bg-cover text-center"
+                style="background-image: url('{{{ page.image }}}');"
+              >
+                <component
+                  src="src/components/v-fill.html"
+                  width="650px"
+                  height="232px"
+                  image="{{{ page.image }}}"
+                >
+                  <table class="w-full">
+                    <tr role="separator">
+                      <td class="leading-[110pt]">&zwj;</td>
+                    </tr>
+                    <tr>
+                      <td class="w-[47pt] sm:w-6"></td>
+                      <td class="w-[100px] text-center">
+                        <span class="text-white text-[19px] leading-[24px]"
+                          >Honda Sensing</span
+                        >
+                        <p class="m-0 text-white text-[13px] leading-[17px]">
+                          Exclusivo pacote de<br />
+                          segurança para o condutor.
+                        </p>
+                      </td>
+                      <td class="w-[47pt] sm:w-6"></td>
+                      <td class="w-[120px] text-center">
+                        <span class="text-white text-[19px] leading-[24px]">HSA</span>
+                        <p class="m-0 text-white text-[13px] leading-[17px]">
+                          Assistente de partidas<br />
+                          em aclives.
+                        </p>
+                      </td>
+                      <td class="w-[20pt] sm:w-6"></td>
+                    </tr>
+                    <tr role="separator">
+                      <td class="leading-[20pt]">&zwj;</td>
+                    </tr>
+                  </table>
+                </component>
+              </td>
+            </tr>
+            <tr role="separator">
+              <td class="h-12 sm:h-8"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>
