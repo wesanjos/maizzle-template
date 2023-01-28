@@ -9,19 +9,28 @@
 |
 */
 
+const path = require("path");
+
 module.exports = {
   build: {
     templates: {
+      source: path.resolve(__dirname + "/src/projects"),
       destination: {
-        path: 'build_production',
+        path: "public",
+      },
+      assets: {
+        source: path.resolve(
+          __dirname + "/src/projects/**/img/*.{jpg,png,gif}"
+        ),
+        destination: "images",
       },
     },
   },
   baseURL: {
-    url: 'http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/',
-    tags: ['img'],
-    inlineCss: true
+    url: "http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/",
+    tags: ["img"],
+    inlineCss: true,
   },
   inlineCSS: true,
   removeUnusedCSS: true,
-}
+};
