@@ -1,7 +1,14 @@
 <!--[if mso]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:{{ width }}; height:{{ height }};"><v:fill type="tile" src="{{{ image }}}" color="{{{ color }}}" /><v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true">
-<![endif]-->
-<content></content>
-<!--[if mso]>
-</div></v:textbox></v:rect>
-<![endif]-->
+    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: {{ width }}; height: {{ height }};" src="{{{ image }}}" />
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block;position: absolute; width: {{ width }}; height:{{ height }};">
+    <v:fill  opacity="0%" color="{{{ color }}}"  />
+    <v:textbox inset="0,0,0,0">
+    <![endif]-->
+<!--[if !mso]>-->
+<div>
+  <!--<![endif]-->
+  <content></content>
+  <!--[if !mso]>-->
+</div>
+<!--<![endif]-->
+<!--[if mso]></v:textbox></v:fill></v:rect></v:image><![endif]-->

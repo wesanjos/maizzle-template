@@ -18,7 +18,7 @@ module.exports = {
     },
   },
   baseURL: {
-    url: 'https://frontend.lionhosts.net.br/newsletters/wesanjos/',
+    url: 'http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/',
     tags: ['img'],
     inlineCss: true
   },
