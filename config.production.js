@@ -17,6 +17,7 @@ module.exports = {
       source: path.resolve(__dirname + "/src/projects"),
       destination: {
         path: "public",
+				extension: 'html'
       },
       assets: {
         source: path.resolve(
