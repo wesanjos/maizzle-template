@@ -9,16 +9,20 @@
 |
 */
 
+const path = require("path");
+
 module.exports = {
   build: {
     templates: {
-      source: 'src/templates',
+      source: path.resolve(__dirname + "/src/projects"),
       destination: {
-        path: 'build_local',
+        path: "public",
       },
       assets: {
-        source: 'src/img',
-        destination: 'img',
+        source: path.resolve(
+          __dirname + "/src/projects/**/img/*.{jpg,png,gif}"
+        ),
+        destination: "images",
       },
     },
   },
