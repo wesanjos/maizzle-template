@@ -172,5 +172,6 @@ module.exports = {
     require("tailwindcss-mso"),
     require("tailwindcss-box-shadow"),
     require("tailwindcss-email-variants"),
+		require('tailwindcss-mso'),
   ],
 };
