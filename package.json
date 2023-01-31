@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+		"preinstall": "npx only-allow pnpm",
     "dev": "maizzle serve",
     "build": "maizzle build production"
   },
