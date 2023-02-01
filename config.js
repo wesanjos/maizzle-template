@@ -12,20 +12,21 @@
 const path = require("path");
 
 module.exports = {
-  build: {
-    templates: {
-      source: path.resolve(__dirname + "/src/projects"),
-      destination: {
-        path: "public",
-				extension: 'html'
-      },
-      assets: {
-        source: path.resolve(
-          __dirname + "/src/projects/**/img/*.{jpg,png,gif}"
-        ),
-        destination: "images",
-      },
-    },
-  },
+	build: {
+		browsersync: {
+			watch: ["src/projects/**"],
+		},
+		templates: {
+			source: "src/projects",
+			destination: {
+				path: "build_local",
+				extension: "html",
+			},
+			assets: {
+				source: "src/img",
+				destination: "img",
+			},
+		},
+	},
 	inlineCSS: true,
-}
+};

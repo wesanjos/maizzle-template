@@ -23,7 +23,7 @@ module.exports = {
         source: path.resolve(
           __dirname + "/src/projects/**/img/*.{jpg,png,gif}"
         ),
-        destination: "images",
+        destination: "img",
       },
     },
   },
