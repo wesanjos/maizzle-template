@@ -1,7 +1,5 @@
 module.exports = {
-	content: {
-		relative: true,
-	},
+	content: ['./src/**/*.*',],
   theme: {
     screens: {
       xs: { max: "425px" },

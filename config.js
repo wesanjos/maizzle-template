@@ -9,23 +9,28 @@
 |
 */
 
-const path = require("path");
-
 module.exports = {
 	build: {
 		browsersync: {
-			watch: ["src/projects/**"],
+			directory: true,
+			notify: false,
+			open: false,
+			port: 3000,
+			ui: { port: 3001 },
+			watch: ["src/**/*.*", "tailwind.config.js"],
 		},
 		templates: {
-			source: "src/projects",
+			source: (config) => {
+				return ["src/projects"];
+			},
 			destination: {
-				path: "build_local",
+				path: "public/projects",
 				extension: "html",
 			},
-			assets: {
-				source: "src/img",
-				destination: "img",
-			},
+		},
+		tailwind: {
+			css: "src/css/tailwind.css",
+			config: "tailwind.config.js",
 		},
 	},
 	inlineCSS: true,

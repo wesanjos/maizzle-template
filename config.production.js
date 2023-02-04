@@ -12,26 +12,22 @@
 const path = require("path");
 
 module.exports = {
-  build: {
-    templates: {
-      source: path.resolve(__dirname + "/src/projects"),
-      destination: {
-        path: "public",
-				extension: 'html'
-      },
-      assets: {
-        source: path.resolve(
-          __dirname + "/src/projects/**/img/*.{jpg,png,gif}"
-        ),
-        destination: "img",
-      },
-    },
-  },
-  baseURL: {
-    url: "http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/",
-    tags: ["img"],
-    inlineCss: true,
-  },
-  inlineCSS: true,
-  removeUnusedCSS: true,
+	build: {
+		templates: {
+			source: (config) => {
+				return ["src/projects"];
+			},
+			destination: {
+				path: "dist/projects",
+				extension: "html",
+			},
+		},
+	},
+	baseURL: {
+		url: "http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/",
+		tags: ["img"],
+		inlineCss: true,
+	},
+	inlineCSS: true,
+	removeUnusedCSS: true,
 };
