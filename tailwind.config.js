@@ -1,5 +1,6 @@
 module.exports = {
 	content: ['./src/**/*.*',],
+	important: true,
   theme: {
     screens: {
       xs: { max: "425px" },
@@ -9,6 +10,7 @@ module.exports = {
       test2: { raw: "(min-width: 481px) and (max-width: 600px)" },
       test3: { raw: "(max-width: 480px)" },
       test4: { raw: "(max-width: 410px)" },
+      test5: { raw: "(max-width: 370px)" },
     },
     extend: {
       spacing: {
@@ -107,7 +109,7 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)',
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+        sans: ['Arial', 'Helvetica', 'sans-serif'],
         serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
         mono: ['ui-monospace', 'Menlo', 'Consolas', 'monospace'],
       },
@@ -170,6 +172,5 @@ module.exports = {
     require("tailwindcss-mso"),
     require("tailwindcss-box-shadow"),
     require("tailwindcss-email-variants"),
-		require('tailwindcss-mso'),
   ],
 };
