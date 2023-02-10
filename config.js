@@ -10,6 +10,7 @@
 */
 
 module.exports = {
+	prettify: true,
 	build: {
 		browsersync: {
 			directory: true,
@@ -34,4 +35,5 @@ module.exports = {
 		},
 	},
 	inlineCSS: true,
+	removeUnusedCSS: true,
 };
