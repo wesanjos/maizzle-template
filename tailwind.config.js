@@ -3,14 +3,15 @@ module.exports = {
 	important: true,
   theme: {
     screens: {
-      xs: { max: "425px" },
+      large: { max: "800px" },
+      medium: { max: "700px" },
+      small: { max: "650px" },
       sm: { max: "600px" },
-      sm2: { max: "650px" },
-      test: { raw: "(min-width: 591px) and (max-width: 630px)" },
-      test2: { raw: "(min-width: 481px) and (max-width: 600px)" },
-      test3: { raw: "(max-width: 480px)" },
-      test4: { raw: "(max-width: 410px)" },
-      test5: { raw: "(max-width: 370px)" },
+      test: { min: "591px", max: "630px" },
+      test2: { min: "481px", max: "600px" },
+			test3: { max: "480px" },
+			test4: { max: "410px" },
+			mobile: { max: "370px" },
     },
     extend: {
       spacing: {
