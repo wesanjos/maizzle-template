@@ -1,9 +1,12 @@
-@import "normalize";
-
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  color-scheme: light dark;
+	color-scheme: light dark;
+}
+
+#root[x-apple-data-detectors="true"],
+a[x-apple-data-detectors="true"] {
+	color: inherit !important;
+	text-decoration: inherit !important;
 }

@@ -1,10 +1,32 @@
-<!--[if mso]>
-<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ href }}" target="_blank" style="width:{{ width }}; height:{{ height }};v-text-anchor:middle;" arcsize="{{ arcsize }}" stroke="{{ stroke }}" fillcolor="{{ fillcolor }}">
-<w:anchorlock/>
-<center>
-<![endif]-->
-<content></content>
-<!--[if mso]>
-</center>
-</v:roundrect>
-<![endif]-->
+<tr>
+	<td>
+		<table class="xs:w-{{mobileContainerWidth}} w-{{containerWidth}}" bgcolor="{{containerColor}}" border="0" cellpadding="0" cellspacing="0" width="" align="center">
+			<tr class="xs:w-{{mobileContainerWidth}} w-{{containerWidth}}" width="" align="center">
+				<td style="padding: 0;" colspan="3" bgcolor="{{containerColor}}" align="center">
+					<center>
+						<div class="xs:w-{{mobileContainerWidth}} w-{{containerWidth}}" width="" style="padding: 0;" bgcolor="{{containerColor}}">
+							<!--[if mso]>
+								<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{link}}" target="_blank" style="height:{{height}}; v-text-anchor:middle; width:{{width}}; border:0;" arcsize="{{arcsize}}" stroke="{{stroke}}" stroke="{{stroke}}" strokecolor="{{borderColor}}" strokeweight="{{borderWidth}}" fillcolor="{{bgColor}}">
+								<v:fill color="{{bgColor}}"></v:fill>
+								<w:anchorlock/>
+								<center style="color:{{textColor}};font-family: {{fontFamily}}; font-size:{{fontSize}};  font-weight: {{fontWeight}}; letter-spacing: {{letterSpacing}}; text-decoration: none; ">
+								{{buttonText}}
+							<![endif]-->
+							<!-- <content></content> -->
+							<a href="{{link}}"
+								target="_blank"
+								class="text-center no-underline inline-block"
+								style="background-color: {{bgColor}}; border: {{borderWidth}} {{borderStyle}} {{borderColor}}; border-radius: {{borderRadius}}; color: {{textColor}}; font-family: {{fontFamily}}; font-size:{{fontSize}}; font-weight: {{fontWeight}}; letter-spacing: {{letterSpacing}}; line-height: {{height}}; width: {{width}};-webkit-text-size-adjust: none; mso-hide:all;">
+								<font>{{buttonText}}</font>
+							</a>
+							<!--[if mso]>
+								</center>
+								</v:roundrect>
+							<![endif]-->
+						</div>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>

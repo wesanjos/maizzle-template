@@ -23,11 +23,6 @@ module.exports = {
 			},
 		},
 	},
-	baseURL: {
-		url: "http://frontend.lionhosts.net.br/newsletters/wesanjos/maizzle/",
-		tags: ["img"],
-		inlineCss: true,
-	},
 	inlineCSS: true,
 	removeUnusedCSS: true,
 };
